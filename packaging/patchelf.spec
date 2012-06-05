@@ -1,7 +1,3 @@
-#
-# Please submit bugfixes or comments via http://bugs.meego.com/
-#
-
 Summary:        A utility for patching ELF binaries
 
 Name:           patchelf
@@ -10,7 +6,7 @@ Release:        1
 License:        GPLv3
 Url:            http://nixos.org/patchelf.html
 Group:          Development/Tools
-Source0:        %{name}.tar.bz2
+Source0:        %{name}-%{version}.tar.bz2
 Source1001: packaging/patchelf.manifest 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Prefix: /usr
@@ -22,7 +18,7 @@ libraries.  It can change the dynamic loader ("ELF interpreter") of
 executables and change the RPATH of executables and libraries.
 
 %prep
-%setup -q -n %{name}
+%setup -q
 
 %build
 cp %{SOURCE1001} .
