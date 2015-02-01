@@ -40,4 +40,3 @@ strip %{buildroot}/%{_bindir}/* || true
 %files
 %{_bindir}/patchelf
 %{_datadir}/doc/patchelf/README
-
